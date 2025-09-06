@@ -8,7 +8,7 @@ function App() {
 
   const fetchJoke = async () => {
     try {
-      const response = await fetch("/jokesapi");
+      const response = await fetch("https://reactrandomquotes.onrender.com/quotesapi");
       const data = await response.json();
       setQuote(data.quote);
       setAuthor(data.author);
